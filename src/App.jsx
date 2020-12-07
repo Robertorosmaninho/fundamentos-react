@@ -10,15 +10,25 @@ import Card from './components/layout/Card'
 export default _ =>
     <div id="app">
         <h1>Fundamentos React</h1>
-        <Card titulo="Exemplo de Card"> 
-        
+        <Card titulo="#04 - Desafio Aleatório">
+            <Random min={1} max={10000} />
         </Card>
-        <Random min={1} max={10000}/>
-        <Fragmento />
-        <ComParametro
-            titulo="Situação Aluno:"
-            aluno="Roberto Neto"
-            nota={9.3}
-        />
-        <Primeiro></Primeiro>
+
+        <Card titulo="#03 - Fragmento">
+            <Fragmento />
+        </Card>
+
+        <Card titulo="#02 - Com Parâmetro">
+            <ComParametro
+                titulo="Situação Aluno:"
+                aluno="Roberto Neto"
+                nota={9.3}
+            />
+        </Card>
+
+        <Card titulo="#01 - Primeiro Componente">
+            <Primeiro></Primeiro>
+        </Card>
+
+
     </div>
