@@ -3,8 +3,14 @@ import React from "react";
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default props => {
+
+    const cardStyle = {
+        backgroundColor: props.color || '#F7EAC8',
+        borderColor: props.color || '#F7EAC8',
+    }
+
     return (
-        <div className="Card">
+        <div className="Card" style={cardStyle}>
             <div className="Title"> {props.titulo}</div>
             <div className="Content">
                 {props.children}
