@@ -1,6 +1,7 @@
 import './App.css'
 import React from 'react'
 
+import Familia from './components/basicos/Familia'
 import Primeiro from './components/basicos/Primeiro' // Por ser um export default não necessariamente o nome do componente deve ser o mesmo que o componente exportado 
 import ComParametro from './components/basicos/ComParamentro'
 import Fragmento from './components/basicos/Fragmento'
@@ -13,6 +14,10 @@ export default _ =>
         <h1>Fundamentos React</h1>
 
         <div className="Cards">
+            <Card titulo="#05 - Componente com Filhos" color="#354458">
+                <Familia sobrenome="Ferreira"/>
+            </Card>
+
             <Card titulo="#04 - Desafio Aleatório" color="#DB3340">
                 <Random min={1} max={10000} />
             </Card>
